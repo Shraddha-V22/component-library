@@ -1,0 +1,9 @@
+.home {
+  min-height: 100vh;
+}
+
+.hero-section_home {
+  display: grid;
+  place-items: center;
+  height: 90vh;
+}
