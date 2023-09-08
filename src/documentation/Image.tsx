@@ -1,3 +1,3 @@
-export default function Image() {
+export default function ImageDocs() {
   return <div>Image</div>;
 }

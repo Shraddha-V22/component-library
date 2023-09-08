@@ -5,5 +5,13 @@
 .hero-section_home {
   display: grid;
   place-items: center;
-  height: 90vh;
+  height: 80vh;
+  text-align: center;
+}
+
+.hero-section_home > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
 }

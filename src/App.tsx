@@ -7,14 +7,14 @@ import {
 } from "react-router-dom";
 import { Components, Home } from "./pages";
 import { Layout } from "./components";
-import Avatar from "./documentation/Avatar";
-import Alert from "./documentation/Alert";
-import Badge from "./documentation/Badge";
-import Button from "./documentation/Button";
-import Card from "./documentation/Card";
-import Headings from "./documentation/Headings";
-import Image from "./documentation/Image";
-import Text from "./documentation/Text";
+import AvatarDocs from "./documentation/Avatar";
+import AlertDocs from "./documentation/Alert";
+import BadgeDocs from "./documentation/Badge";
+import ButtonDocs from "./documentation/Button";
+import CardDocs from "./documentation/Card";
+import HeadingsDocs from "./documentation/Headings";
+import ImageDocs from "./documentation/Image";
+import TextDocs from "./documentation/Text";
 import ComponentLayout from "./documentation/ComponentLayout";
 
 function AppRouter() {
@@ -25,14 +25,14 @@ function AppRouter() {
           <Route path="/" element={<Home />} />
           <Route path="/components/all" element={<Components />} />
           <Route path="/components" element={<ComponentLayout />}>
-            <Route path="/components/avatar" element={<Avatar />} />
-            <Route path="/components/alert" element={<Alert />} />
-            <Route path="/components/badge" element={<Badge />} />
-            <Route path="/components/button" element={<Button />} />
-            <Route path="/components/card" element={<Card />} />
-            <Route path="/components/headings" element={<Headings />} />
-            <Route path="/components/image" element={<Image />} />
-            <Route path="/components/text" element={<Text />} />
+            <Route path="/components/avatar" element={<AvatarDocs />} />
+            <Route path="/components/alert" element={<AlertDocs />} />
+            <Route path="/components/badge" element={<BadgeDocs />} />
+            <Route path="/components/button" element={<ButtonDocs />} />
+            <Route path="/components/card" element={<CardDocs />} />
+            <Route path="/components/headings" element={<HeadingsDocs />} />
+            <Route path="/components/image" element={<ImageDocs />} />
+            <Route path="/components/text" element={<TextDocs />} />
           </Route>
         </Route>
       </>

@@ -1,0 +1,17 @@
+.components {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.components_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.component_docs_path {
+  text-transform: capitalize;
+  width: auto;
+}

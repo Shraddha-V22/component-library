@@ -1,5 +1,13 @@
 .header {
   display: flex;
   justify-content: space-between;
-  border: 1px solid;
+  align-items: center;
+  border-bottom: 1px solid;
+  padding: 1rem;
+}
+
+.header nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }

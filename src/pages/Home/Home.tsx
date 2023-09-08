@@ -10,7 +10,10 @@ export function Home() {
         <div>
           <h1>My Component Library</h1>
           <p>description</p>
-          <button onClick={() => navigate("/components/all")}>
+          <button
+            className="button"
+            onClick={() => navigate("/components/all")}
+          >
             Get started
           </button>
         </div>

@@ -1,3 +1,3 @@
-export default function Button() {
+export default function ButtonDocs() {
   return <div>Button</div>;
 }

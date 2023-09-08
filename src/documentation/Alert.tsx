@@ -1,3 +1,3 @@
-export default function Alert() {
+export default function AlertDocs() {
   return <div>Alert</div>;
 }

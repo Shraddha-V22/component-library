@@ -3,7 +3,7 @@ import { Sidebar } from "../components/Sidebar/Sidebar.tsx";
 
 export default function ComponentLayout() {
   return (
-    <article>
+    <article className="component_docs_page">
       <Sidebar />
       <Outlet />
     </article>
