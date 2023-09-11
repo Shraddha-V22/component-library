@@ -4,9 +4,9 @@ import "./Layout.css";
 
 export function Layout() {
   return (
-    <article>
+    <div>
       <Header />
       <Outlet />
-    </article>
+    </div>
   );
 }

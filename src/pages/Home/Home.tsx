@@ -11,7 +11,7 @@ export function Home() {
           <h1>My Component Library</h1>
           <p>description</p>
           <button
-            className="button"
+            className="btn_common"
             onClick={() => navigate("/components/all")}
           >
             Get started

@@ -21,7 +21,13 @@ button {
   font-family: inherit;
 }
 
-.button {
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.btn_common {
   padding: 0.5rem 1rem;
   width: fit-content;
   border-radius: 0.2rem;
@@ -30,12 +36,12 @@ button {
   transition: 100ms linear all;
 }
 
-.button:hover {
+.btn_common:hover {
   background-color: #eee;
   cursor: pointer;
 }
 
-.button:active {
+.btn_common:active {
   background-color: #dcdcdc;
 }
 
@@ -44,4 +50,48 @@ button {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 2rem;
+}
+
+.example_box {
+  border: 1px solid;
+  border-radius: 0.2rem;
+  padding: 2rem;
+}
+
+.example_box_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.iframe {
+  width: 100%;
+  border: 0;
+  transform: scale(1);
+  overflow: hidden;
+}
+
+.docs_section {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+code {
+  background-color: #ccc;
+  padding: 0 0.3rem;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.border-2 {
+  border: 2px solid;
 }

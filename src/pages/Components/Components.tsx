@@ -12,7 +12,7 @@ export function Components() {
         <div className="components_container">
           {componentsUrl.map((comp: ComponentUrl) => (
             <div
-              className="component_docs_path button"
+              className="component_docs_path btn_common"
               key={comp.id}
               onClick={() => navigate(comp.path)}
             >

@@ -16,6 +16,7 @@ import HeadingsDocs from "./documentation/Headings";
 import ImageDocs from "./documentation/Image";
 import TextDocs from "./documentation/Text";
 import ComponentLayout from "./documentation/ComponentLayout";
+import Introduction from "./documentation/Introduction";
 
 function AppRouter() {
   const router = createBrowserRouter(
@@ -25,6 +26,7 @@ function AppRouter() {
           <Route path="/" element={<Home />} />
           <Route path="/components/all" element={<Components />} />
           <Route path="/components" element={<ComponentLayout />}>
+            <Route index element={<Introduction />} />
             <Route path="/components/avatar" element={<AvatarDocs />} />
             <Route path="/components/alert" element={<AlertDocs />} />
             <Route path="/components/badge" element={<BadgeDocs />} />

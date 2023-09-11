@@ -1,0 +1,10 @@
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.rounded {
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}

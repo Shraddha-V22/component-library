@@ -1,0 +1,43 @@
+.alert {
+  max-width: 250px;
+  border: 1px solid;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+}
+
+.alert_text {
+  width: 100%;
+  word-break: break-all;
+}
+
+.success {
+  color: green;
+}
+
+.warning {
+  color: orange;
+}
+
+.error {
+  color: red;
+}
+
+.info {
+  color: rgb(43, 157, 195);
+}
+
+.temp_icon {
+  border-radius: 100%;
+  border: 1px solid;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.alert_grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem;
+  /* align-items: center; */
+}

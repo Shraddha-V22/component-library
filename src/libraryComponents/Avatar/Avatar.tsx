@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./Avatar.css";
 
 type AvatarType = {
@@ -24,7 +24,13 @@ export default function Avatar({
           onError={() => setIsUrlBroken(true)}
         />
       )}
-      {isUrlBroken && <p className="avatar_fallback">{fallbackInitials}</p>}
+      {isUrlBroken && (
+        <p className="avatar_fallback">
+          {fallbackInitials.length === 2
+            ? fallbackInitials
+            : fallbackInitials.substring(0, 2)}
+        </p>
+      )}
     </div>
   );
 }

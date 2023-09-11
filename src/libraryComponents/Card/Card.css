@@ -1,0 +1,59 @@
+.card {
+  width: 250px;
+  min-height: 150px;
+  border-radius: 0.2rem;
+  position: relative;
+}
+
+.card_content {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.badge {
+  border: 1px solid;
+  width: fit-content;
+  padding: 0.2rem 0.5rem;
+  text-transform: capitalize;
+  border-radius: 0.2rem;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  background-color: white;
+}
+
+.card_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.2rem;
+}
+
+.card_text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: hsla(0, 0%, 100%);
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.horizontal {
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: auto;
+}
+
+.shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.color {
+  background-color: pink;
+}

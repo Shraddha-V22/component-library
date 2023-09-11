@@ -1,0 +1,51 @@
+button:hover {
+  cursor: pointer;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.button:hover {
+  border-color: #eee;
+  background-color: #eee;
+}
+
+.primary {
+  color: rgb(28, 130, 164);
+}
+
+.primary:hover {
+  border-color: #e1f5fe;
+  background-color: #e1f5fe;
+}
+
+.link {
+  border: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.floating_action_btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid;
+  background-color: transparent;
+  position: fixed;
+}
+
+.floating_action_btn:hover {
+  background-color: #eee;
+  border-color: #eee;
+}
