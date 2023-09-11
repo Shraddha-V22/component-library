@@ -7,6 +7,7 @@ export default function TextDocs() {
     <div className="flex_col">
       <div>
         <h1>Text</h1>
+        <p>Text styles of different varients.</p>
       </div>
 
       <DocSection
@@ -70,9 +71,42 @@ export default function TextDocs() {
         iframe={<IFrame codeId="xP4YWC25qs98VF3dz6A5" />}
       />
 
-      <Text varient="q">Hello</Text>
+      <DocSection
+        heading="Inline quote style"
+        componentEx={
+          <Text varient="p">
+            WWF's goal is to:{" "}
+            <Text varient="q">
+              Build a future where people live in harmony with nature.
+            </Text>{" "}
+            We hope they succeed.
+          </Text>
+        }
+        description={
+          <p>
+            The <code>varient</code> <code>q</code> gives inline quote style to
+            the text component.{" "}
+          </p>
+        }
+        iframe={<IFrame codeId="wns6hVdN4OYbmsB2gb59" />}
+      />
 
-      <Text varient="blockquote">Hello</Text>
+      <DocSection
+        heading="Custom style to Text component"
+        componentEx={
+          <Text className="text-lg italic" varient="p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            atque aspernatur porro?
+          </Text>
+        }
+        description={
+          <p>
+            Custom style can be given to the text component by providing
+            tailwind classes or custom css classes.
+          </p>
+        }
+        iframe={<IFrame codeId="TlHhDAgBHucqLaWJCmVr" />}
+      />
     </div>
   );
 }

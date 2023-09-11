@@ -7,7 +7,7 @@ export default function Text({
   className,
 }: {
   varient: string;
-  children: string;
+  children: React.ReactNode;
   cite?: string;
   className?: string;
 }) {

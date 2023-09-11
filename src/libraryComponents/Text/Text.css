@@ -2,3 +2,12 @@
   margin-inline: 40px;
   margin-block: 16px;
 }
+
+.text-lg {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem;
+}
+
+.italic {
+  font-style: italic;
+}
