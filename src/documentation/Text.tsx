@@ -7,20 +7,20 @@ export default function TextDocs() {
     <div className="flex_col">
       <div>
         <h1>Text</h1>
-        <p>Text styles of different varients.</p>
+        <p>Text styles of different variants.</p>
       </div>
 
       <DocSection
-        heading="Text component of varient p"
+        heading="Text component of variant p"
         componentEx={
-          <Text varient="p">
+          <Text variant="p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
             atque aspernatur porro?
           </Text>
         }
         description={
           <p>
-            The <code>varient</code> <code>p</code> gives simple paragraph
+            The <code>variant</code> <code>p</code> gives simple paragraph
             styling to the text.
           </p>
         }
@@ -28,16 +28,16 @@ export default function TextDocs() {
       />
 
       <DocSection
-        heading="Text component of varient small"
+        heading="Text component of variant small"
         componentEx={
-          <Text varient="small">
+          <Text variant="small">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quia
             unde fugit!
           </Text>
         }
         description={
           <p>
-            The <code>varient</code> <code>small</code> can be used to get the
+            The <code>variant</code> <code>small</code> can be used to get the
             small paragraph styling.
           </p>
         }
@@ -48,9 +48,9 @@ export default function TextDocs() {
         heading="Blockquote text style"
         componentEx={
           <div>
-            <Text varient="p">Here is a quote from WWF's website:</Text>
+            <Text variant="p">Here is a quote from WWF's website:</Text>
             <Text
-              varient="blockquote"
+              variant="blockquote"
               cite="http://www.worldwildlife.org/who/index.html"
             >
               For 50 years, WWF has been protecting the future of nature. The
@@ -62,7 +62,7 @@ export default function TextDocs() {
         }
         description={
           <p>
-            The <code>varient</code> <code>blockquote</code> gives blockquote
+            The <code>variant</code> <code>blockquote</code> gives blockquote
             styling to the text component. blockquote quotes a section from
             another source. So Text component here takes <code>cite</code>{" "}
             property as well, which takes the source url.
@@ -74,9 +74,9 @@ export default function TextDocs() {
       <DocSection
         heading="Inline quote style"
         componentEx={
-          <Text varient="p">
+          <Text variant="p">
             WWF's goal is to:{" "}
-            <Text varient="q">
+            <Text variant="q">
               Build a future where people live in harmony with nature.
             </Text>{" "}
             We hope they succeed.
@@ -84,7 +84,7 @@ export default function TextDocs() {
         }
         description={
           <p>
-            The <code>varient</code> <code>q</code> gives inline quote style to
+            The <code>variant</code> <code>q</code> gives inline quote style to
             the text component.{" "}
           </p>
         }
@@ -94,7 +94,7 @@ export default function TextDocs() {
       <DocSection
         heading="Custom style to Text component"
         componentEx={
-          <Text className="text-lg italic" varient="p">
+          <Text className="text-lg italic" variant="p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
             atque aspernatur porro?
           </Text>

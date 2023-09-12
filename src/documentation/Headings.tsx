@@ -10,21 +10,21 @@ export default function HeadingsDocs() {
         <p>Styles for Heading component.</p>
       </div>
       <DocSection
-        heading="Headings of different varients"
+        heading="Headings of different variants"
         componentEx={
           <div>
-            <Heading varient="h1">hello</Heading>
-            <Heading varient="h2">hello</Heading>
-            <Heading varient="h3">hello</Heading>
-            <Heading varient="h4">hello</Heading>
-            <Heading varient="h5">hello</Heading>
-            <Heading varient="h6">hello</Heading>
+            <Heading variant="h1">hello</Heading>
+            <Heading variant="h2">hello</Heading>
+            <Heading variant="h3">hello</Heading>
+            <Heading variant="h4">hello</Heading>
+            <Heading variant="h5">hello</Heading>
+            <Heading variant="h6">hello</Heading>
           </div>
         }
         description={
           <p>
             Heading component can be used to get heading style of different
-            levels. The <code>varient</code> prop can be used to get different
+            levels. The <code>variant</code> prop can be used to get different
             levels of heading and it takes values from <code>h1</code> to{" "}
             <code>h6</code>.
           </p>
@@ -35,7 +35,7 @@ export default function HeadingsDocs() {
       <DocSection
         heading="Customizing heading style"
         componentEx={
-          <Heading className="font-extrabold capitalize" varient="h1">
+          <Heading className="font-extrabold capitalize" variant="h1">
             Customized style using classnames
           </Heading>
         }

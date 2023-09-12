@@ -1,20 +1,35 @@
+import { useState } from "react";
 import "./Card.css";
 
 export default function Card({
   children,
   horizontal,
   className,
+  dismiss,
 }: {
   children: React.ReactNode;
   horizontal?: boolean;
   className?: string;
+  dismiss?: boolean;
 }) {
+  const [isDismissed, setIsDismissed] = useState(false);
+
   return (
-    <div className={`card ${className}`}>
-      <div className={`card_content ${horizontal && "horizontal"}`}>
-        {children}
+    !isDismissed && (
+      <div className={`card ${className}`}>
+        {dismiss && (
+          <button
+            className="dismiss_btn"
+            onClick={() => setIsDismissed((prev) => !prev)}
+          >
+            X
+          </button>
+        )}
+        <div className={`card_content ${horizontal && "horizontal"}`}>
+          {children}
+        </div>
       </div>
-    </div>
+    )
   );
 }
 
@@ -38,8 +53,8 @@ export function CardText({
   text,
   overlay,
 }: {
-  heading: string;
-  subHeading: string;
+  heading?: string;
+  subHeading?: string;
   text: string;
   overlay?: boolean;
 }) {

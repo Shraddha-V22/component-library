@@ -1,17 +1,17 @@
 import "./Text.css";
 
 export default function Text({
-  varient,
+  variant,
   children,
   cite,
   className,
 }: {
-  varient: string;
+  variant: string;
   children: React.ReactNode;
   cite?: string;
   className?: string;
 }) {
-  switch (varient) {
+  switch (variant) {
     case "small":
       return <small className={className}>{children}</small>;
     case "p":
@@ -20,7 +20,7 @@ export default function Text({
       return (
         <blockquote
           className={`${className} blockquote`}
-          cite={varient === "blockquote" ? cite : ""}
+          cite={variant === "blockquote" ? cite : ""}
         >
           {children}
         </blockquote>

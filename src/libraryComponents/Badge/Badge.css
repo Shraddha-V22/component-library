@@ -1,0 +1,41 @@
+.number {
+  min-width: 1.3rem;
+  height: fit-content;
+  border: 1px solid;
+  padding: 0.2rem;
+  border-radius: 45%;
+  background-color: white;
+  position: absolute;
+  font-size: 12px;
+  top: 2%;
+  right: 2%;
+  display: grid;
+  place-items: center;
+}
+
+.badge_status {
+  position: absolute;
+  width: 1rem;
+  aspect-ratio: 1 / 1;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: green;
+  bottom: 1%;
+  right: 1%;
+}
+
+.online {
+  background-color: green;
+}
+
+.idle {
+  background-color: orange;
+}
+
+.dnd {
+  background-color: red;
+}
+
+.offline {
+  background-color: gray;
+}

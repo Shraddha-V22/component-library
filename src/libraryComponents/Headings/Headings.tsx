@@ -1,15 +1,15 @@
 import "./Headings.css";
 
 export default function Heading({
-  varient,
+  variant,
   children,
   className,
 }: {
-  varient?: string;
+  variant?: string;
   children: React.ReactNode;
   className?: string;
 }) {
-  switch (varient) {
+  switch (variant) {
     case "h1":
       return <h1 className={className}>{children}</h1>;
     case "h2":
