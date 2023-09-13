@@ -12,6 +12,13 @@ export function Header() {
         <nav>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/components/all">Components</NavLink>
+          <a
+            href="https://github.com/Shraddha-V22/component-library"
+            target="_blank"
+            className="github_link"
+          >
+            <i className="fa-brands fa-github"></i>
+          </a>
         </nav>
       </div>
     </header>
