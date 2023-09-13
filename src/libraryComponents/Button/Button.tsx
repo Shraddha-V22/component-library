@@ -36,7 +36,7 @@ export function FloatingActionButton({
   left,
   right,
   className,
-}: FloatingActionBtnType) {
+}: FloatingActionBtnType): JSX.Element {
   return (
     <button
       style={{ top, right, left, bottom }}

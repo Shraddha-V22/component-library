@@ -8,7 +8,7 @@ export default function Badge({
   type: string;
   className?: string;
   count?: number | string;
-}) {
+}): JSX.Element | null {
   if (type === "profile") {
     return <div className={`profile ${className}`}></div>;
   }
@@ -16,4 +16,6 @@ export default function Badge({
   if (type === "number") {
     return <div className="number">{count}</div>;
   }
+
+  return null;
 }

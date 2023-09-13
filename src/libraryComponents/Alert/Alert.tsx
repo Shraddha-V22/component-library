@@ -8,7 +8,7 @@ export default function Alert({
   type?: string;
   text: string;
   className?: string;
-}) {
+}): JSX.Element {
   const iconByType = function (type: string) {
     switch (type) {
       case "success":

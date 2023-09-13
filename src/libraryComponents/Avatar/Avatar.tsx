@@ -12,7 +12,7 @@ export default function Avatar({
   fallbackInitials = "",
   className = "sm",
   children,
-}: AvatarType) {
+}: AvatarType): JSX.Element {
   const [isUrlBroken, setIsUrlBroken] = useState<boolean>(false);
 
   return (

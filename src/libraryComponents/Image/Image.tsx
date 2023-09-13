@@ -10,7 +10,7 @@ export default function Image({
   alt?: string;
   className?: string;
   rounded?: boolean;
-}) {
+}): JSX.Element {
   return (
     <img
       className={`image ${className} ${rounded && "rounded"}`}

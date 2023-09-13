@@ -10,7 +10,7 @@ export default function Text({
   children: React.ReactNode;
   cite?: string;
   className?: string;
-}) {
+}): JSX.Element {
   switch (variant) {
     case "small":
       return <small className={className}>{children}</small>;

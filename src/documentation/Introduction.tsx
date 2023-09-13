@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import { Button } from "../libraryComponents";
 
 export default function Introduction() {
   const navigate = useNavigate();

@@ -8,7 +8,7 @@ export default function Heading({
   variant?: string;
   children: React.ReactNode;
   className?: string;
-}) {
+}): JSX.Element {
   switch (variant) {
     case "h1":
       return <h1 className={className}>{children}</h1>;

@@ -11,26 +11,24 @@ export default function Card({
   horizontal?: boolean;
   className?: string;
   dismiss?: boolean;
-}) {
+}): JSX.Element | null {
   const [isDismissed, setIsDismissed] = useState(false);
 
-  return (
-    !isDismissed && (
-      <div className={`card ${className}`}>
-        {dismiss && (
-          <button
-            className="dismiss_btn"
-            onClick={() => setIsDismissed((prev) => !prev)}
-          >
-            X
-          </button>
-        )}
-        <div className={`card_content ${horizontal && "horizontal"}`}>
-          {children}
-        </div>
+  return !isDismissed ? (
+    <div className={`card ${className}`}>
+      {dismiss && (
+        <button
+          className="dismiss_btn"
+          onClick={() => setIsDismissed((prev) => !prev)}
+        >
+          X
+        </button>
+      )}
+      <div className={`card_content ${horizontal && "horizontal"}`}>
+        {children}
       </div>
-    )
-  );
+    </div>
+  ) : null;
 }
 
 export function Badge({
