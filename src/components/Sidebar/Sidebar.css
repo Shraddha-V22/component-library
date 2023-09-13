@@ -1,3 +1,7 @@
+.sidebar {
+  height: 100%;
+}
+
 .components_links {
   display: flex;
   flex-direction: column;
@@ -8,4 +12,14 @@
 .components_links a {
   border: 0.5px solid;
   padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+}
+
+.components_links a:hover {
+  background-color: #222;
+}
+
+.components_links a:active {
+  background-color: #eee;
+  color: #222;
 }

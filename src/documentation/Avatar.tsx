@@ -13,6 +13,16 @@ export default function AvatarDocs() {
         </p>
       </div>
 
+      <div className="container">
+        <h2>Component</h2>
+        <IFrame codeId="XmQyTIuQhhjL8yQV91kL" />
+      </div>
+
+      <div className="container">
+        <h2>CSS</h2>
+        <IFrame codeId="tKcxQTUYZKXyqc3A5jOd" />
+      </div>
+
       <DocSection
         heading="Avatar with Image"
         componentEx={
@@ -43,7 +53,7 @@ export default function AvatarDocs() {
             classes can be used.
           </p>
         }
-        iframe={<IFrame codeId="X6rPgt2B7A9SG44hGrxi" />}
+        iframe={<IFrame codeId="3hrp3L6fzI2TKq9v22IR" />}
       />
       <DocSection
         heading="Avatar without an Image"
@@ -57,7 +67,7 @@ export default function AvatarDocs() {
             name only the initial two characters will be shown as fallback.
           </p>
         }
-        iframe={<IFrame codeId="Ow8i0ChXORrfOPu7xN7j" />}
+        iframe={<IFrame codeId="HzzfMnCKo02tzd0alMGI" />}
       />
 
       <DocSection
@@ -70,7 +80,7 @@ export default function AvatarDocs() {
             look like shown above.
           </p>
         }
-        iframe={<IFrame codeId="UyiG0d0ONR1HbV89Rp6w" />}
+        iframe={<IFrame codeId="xZ8KMR434BUb3l1oRtpe" />}
       />
     </div>
   );

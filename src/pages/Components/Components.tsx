@@ -8,7 +8,7 @@ export function Components() {
   return (
     <article>
       <section className="components">
-        <h3>All components</h3>
+        <h3 className="title_components">All components</h3>
         <div className="components_container">
           {componentsUrl.map((comp: ComponentUrl) => (
             <div

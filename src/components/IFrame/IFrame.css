@@ -4,3 +4,26 @@
   transform: scale(1);
   overflow: hidden;
 }
+
+.iframe_outermost {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 624.5px;
+  position: relative;
+}
+
+.iframe_inner {
+  width: 100%;
+  padding-bottom: 151.80144115292234%;
+}
+
+.iframe_innermost {
+  background: #ffffff00;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}

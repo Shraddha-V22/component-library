@@ -3,6 +3,7 @@
   border: 1px solid;
   padding: 0.7rem;
   border-radius: 0.2rem;
+  background-color: #222;
 }
 
 .alert_text {
@@ -12,18 +13,22 @@
 
 .success {
   color: green;
+  background-color: rgb(88, 191, 136);
 }
 
 .warning {
   color: orange;
+  background-color: rgb(245, 212, 149);
 }
 
 .error {
   color: red;
+  background-color: hsl(0, 72%, 74%);
 }
 
 .info {
   color: rgb(43, 157, 195);
+  background-color: rgb(210, 239, 248);
 }
 
 .temp_icon {
@@ -39,5 +44,4 @@
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 0.5rem;
-  /* align-items: center; */
 }

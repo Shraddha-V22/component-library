@@ -1,0 +1,36 @@
+.search {
+  width: fit-content;
+  position: relative;
+}
+
+.search_bar {
+  display: flex;
+}
+
+.search_input {
+  padding: 0.8rem 1rem;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: 1rem;
+  background-color: #333;
+  color: #eee;
+  outline: none;
+}
+
+.search_suggestion {
+  position: absolute;
+  border: 1px solid;
+  width: 100%;
+  background-color: #222;
+  list-style: none;
+}
+
+.search_suggestion > li {
+  padding: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.search_suggestion > li:hover {
+  background-color: #333;
+}

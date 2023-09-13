@@ -5,7 +5,9 @@ export default function ComponentLayout() {
   return (
     <div className="component_docs_page">
       <Sidebar />
-      <Outlet />
+      <div className="component_doc_outlet">
+        <Outlet />
+      </div>
     </div>
   );
 }

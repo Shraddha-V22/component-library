@@ -4,13 +4,14 @@
   border: 1px solid;
   padding: 0.2rem;
   border-radius: 45%;
-  background-color: white;
+  background-color: pink;
   position: absolute;
   font-size: 12px;
-  top: 2%;
-  right: 2%;
+  top: -15%;
+  right: -15%;
   display: grid;
   place-items: center;
+  color: #000;
 }
 
 .badge_status {

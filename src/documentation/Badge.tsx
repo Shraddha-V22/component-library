@@ -4,8 +4,8 @@ import DocSection from "./DocSection";
 
 export default function BadgeDocs() {
   return (
-    <div>
-      <div>
+    <div className="flex_col">
+      <div className="container">
         <h1>Badge</h1>
         <p>
           A badge component to visually convey information, such as status,
@@ -14,12 +14,32 @@ export default function BadgeDocs() {
         </p>
       </div>
 
+      <div className="container">
+        <h2>Component</h2>
+        <IFrame codeId="zxNyIZyAo1WuhiKgwxoA" />
+      </div>
+
+      <div className="container">
+        <h2>CSS</h2>
+        <IFrame codeId="EvzfEMwXjtDYKk2nIiU4" />
+      </div>
+
       <DocSection
         heading="Number Badge"
         componentEx={
-          <div style={{ position: "relative", width: "fit-content" }}>
-            <p style={{ fontSize: "2rem" }}>🔔</p>
-            <Badge type="number" count="2" />
+          <div className="example_box_flex">
+            <div style={{ position: "relative", width: "fit-content" }}>
+              <p style={{ fontSize: "2rem" }}>
+                <i className="fa-regular fa-bell"></i>
+              </p>
+              <Badge type="number" count="2" />
+            </div>
+            <div style={{ position: "relative", width: "fit-content" }}>
+              <p style={{ fontSize: "2rem" }}>
+                <i className="fa-solid fa-cart-shopping"></i>
+              </p>
+              <Badge type="number" count="2" />
+            </div>
           </div>
         }
         description={
@@ -30,7 +50,7 @@ export default function BadgeDocs() {
             items, which can be either string or a number.
           </p>
         }
-        iframe={<IFrame codeId="" />}
+        iframe={<IFrame codeId="sw2kS2yGfRzX2mslSicW" />}
       />
 
       <DocSection
@@ -75,7 +95,7 @@ export default function BadgeDocs() {
             items, which can be either string or a number.
           </p>
         }
-        iframe={<IFrame codeId="" />}
+        iframe={<IFrame codeId="KxfcJbzAhwPXrskopFcw" />}
       />
     </div>
   );

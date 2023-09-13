@@ -6,9 +6,19 @@ import DocSection from "./DocSection";
 export default function ButtonDocs() {
   return (
     <div className="flex_col">
-      <div>
+      <div className="container">
         <h1>Button</h1>
         <p>Button or a component resembling a button.</p>
+      </div>
+
+      <div className="container">
+        <h2>Component</h2>
+        <IFrame codeId="WfZtkKadotjJW9LFl7hH" />
+      </div>
+
+      <div className="container">
+        <h2>CSS</h2>
+        <IFrame codeId="5Qyxae4KAqGORXQP2ovc" />
       </div>
 
       <DocSection
@@ -23,7 +33,7 @@ export default function ButtonDocs() {
             <code>className</code> prop.
           </p>
         }
-        iframe={<IFrame codeId="d3K6g7cXlLsTq8ragnqu" />}
+        iframe={<IFrame codeId="gtBIE7UCOJWHAt3M69fz" />}
       />
 
       <DocSection
@@ -43,7 +53,7 @@ export default function ButtonDocs() {
             can be customized further using the <code>className</code> prop.
           </p>
         }
-        iframe={<IFrame codeId="CfJvVSpL261y6zkqeblk" />}
+        iframe={<IFrame codeId="KB3EKkHy8bvzbR1KDzsy" />}
       />
       <DocSection
         heading="Link Button"
@@ -60,7 +70,7 @@ export default function ButtonDocs() {
             by passing it <code>link</code> to the <code>className</code> prop.
           </p>
         }
-        iframe={<IFrame codeId="fzO5UbqxLzNBWS1zBjAT" />}
+        iframe={<IFrame codeId="1B994OewV8Pc4Zp6RA5g" />}
       />
 
       <DocSection
@@ -80,7 +90,7 @@ export default function ButtonDocs() {
             string icon value.
           </p>
         }
-        iframe={<IFrame codeId="9t77mmsS7mT25aF1pzgO" />}
+        iframe={<IFrame codeId="WdIVgaer4MN6XkAS2NrD" />}
       />
 
       <DocSection
@@ -99,10 +109,31 @@ export default function ButtonDocs() {
             shown above.
           </p>
         }
-        iframe={<IFrame codeId="ovmkk63SrBJGlV5qACy4" />}
+        iframe={<IFrame codeId="aCgF4lwYKbFVvRkSdg3q" />}
       />
-      <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-        <FloatingActionButton icon="₹" />
+
+      <DocSection
+        heading="Floating Action Button"
+        componentEx={
+          <div style={{ position: "relative" }}>
+            <FloatingActionButton
+              icon="₹"
+              top={0}
+              className="fixed"
+              onClick={() => alert("Floating action button clicked!")}
+            />
+          </div>
+        }
+        description={<p>This is Floating action button.</p>}
+        iframe={<IFrame codeId="0gfNhENrEx32OrHhm6XT" />}
+      />
+      <div className="container">
+        <h3>Component for floating action button</h3>
+        <IFrame codeId="jUhzg8vYUyrmDrlo6euO" />
+      </div>
+      <div className="container">
+        <h3>CSS for floating action button</h3>
+        <IFrame codeId="Qx4czL4yYHBohPkGnSAq" />
       </div>
     </div>
   );

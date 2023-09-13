@@ -17,6 +17,7 @@ import ImageDocs from "./documentation/Image";
 import TextDocs from "./documentation/Text";
 import ComponentLayout from "./documentation/ComponentLayout";
 import Introduction from "./documentation/Introduction";
+import PageNotFound from "./pages/404/404";
 
 function AppRouter() {
   const router = createBrowserRouter(
@@ -36,6 +37,7 @@ function AppRouter() {
             <Route path="/components/image" element={<ImageDocs />} />
             <Route path="/components/text" element={<TextDocs />} />
           </Route>
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </>
     )

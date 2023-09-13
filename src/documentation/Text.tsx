@@ -5,9 +5,19 @@ import DocSection from "./DocSection";
 export default function TextDocs() {
   return (
     <div className="flex_col">
-      <div>
+      <div className="container">
         <h1>Text</h1>
         <p>Text styles of different variants.</p>
+      </div>
+
+      <div className="container">
+        <h2>Component</h2>
+        <IFrame codeId="Ys7M6x5M0B3B6Pifs7lX" />
+      </div>
+
+      <div className="container">
+        <h2>CSS</h2>
+        <IFrame codeId="lUp2enedIFnJkYlo9fjm" />
       </div>
 
       <DocSection
@@ -24,7 +34,7 @@ export default function TextDocs() {
             styling to the text.
           </p>
         }
-        iframe={<IFrame codeId="VCUoPwefUw0MHh3Hz9tQ" />}
+        iframe={<IFrame codeId="cGnZZFXVslfdtR9THgQB" />}
       />
 
       <DocSection
@@ -41,7 +51,7 @@ export default function TextDocs() {
             small paragraph styling.
           </p>
         }
-        iframe={<IFrame codeId="1h8vB5E5gO5R1EYkptIp" />}
+        iframe={<IFrame codeId="otI2p9f4PsCoZyYvAnyz" />}
       />
 
       <DocSection
@@ -68,7 +78,7 @@ export default function TextDocs() {
             property as well, which takes the source url.
           </p>
         }
-        iframe={<IFrame codeId="xP4YWC25qs98VF3dz6A5" />}
+        iframe={<IFrame codeId="ROje1bq5NcEtcOIUopUy" />}
       />
 
       <DocSection
@@ -88,7 +98,7 @@ export default function TextDocs() {
             the text component.{" "}
           </p>
         }
-        iframe={<IFrame codeId="wns6hVdN4OYbmsB2gb59" />}
+        iframe={<IFrame codeId="TQe8iV5Qh4bh996AErTW" />}
       />
 
       <DocSection
@@ -105,7 +115,7 @@ export default function TextDocs() {
             tailwind classes or custom css classes.
           </p>
         }
-        iframe={<IFrame codeId="TlHhDAgBHucqLaWJCmVr" />}
+        iframe={<IFrame codeId="GpOS8UsfjxUYjUq4EMUb" />}
       />
     </div>
   );

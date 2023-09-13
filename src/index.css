@@ -1,2 +1,14 @@
-/* :root {
-} */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  visibility: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  width: 100%;
+  background-color: #333;
+}

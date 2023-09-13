@@ -5,9 +5,19 @@ import DocSection from "./DocSection";
 export default function ImageDocs() {
   return (
     <div className="flex_col">
-      <div>
+      <div className="container">
         <h1>Image</h1>
         <p>Responsive and round Image component.</p>
+      </div>
+
+      <div className="container">
+        <h2>Component</h2>
+        <IFrame codeId="W9XrnNbtjziu8DjJ7Zsn" />
+      </div>
+
+      <div className="container">
+        <h2>CSS</h2>
+        <IFrame codeId="Nj8PgncgGKWqjzoIigbv" />
       </div>
 
       <DocSection
@@ -27,7 +37,7 @@ export default function ImageDocs() {
             <code>src</code> and <code>alt</code> properties.
           </p>
         }
-        iframe={<IFrame codeId="hK0c00SLgkSyKHu9gn6e" />}
+        iframe={<IFrame codeId="UEICk0ajcdNSzdDfg4Lj" />}
       />
 
       <DocSection
@@ -47,7 +57,7 @@ export default function ImageDocs() {
             <code>rounded</code> property to the Image component as shown above.{" "}
           </p>
         }
-        iframe={<IFrame codeId="XOAIkMiUfpqe4wlxrWYD" />}
+        iframe={<IFrame codeId="ZefYjaaYWujoTDRzo4an" />}
       />
 
       <DocSection
@@ -67,7 +77,7 @@ export default function ImageDocs() {
             tailwind classes or custom css classes as shown above.
           </p>
         }
-        iframe={<IFrame codeId="KaxLcLJiUHpXnsqS3HsR" />}
+        iframe={<IFrame codeId="W5fr4rcsgmot9SSxPoaH" />}
       />
     </div>
   );

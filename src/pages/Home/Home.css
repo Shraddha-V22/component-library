@@ -1,10 +1,6 @@
-.home {
-  min-height: 100vh;
-}
-
 .hero-section_home {
   display: grid;
-  place-items: center;
+  align-items: start;
   height: 80vh;
   text-align: center;
 }
@@ -12,6 +8,37 @@
 .hero-section_home > div {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  align-items: center;
+  gap: 2rem;
+  align-items: left;
+  max-width: 600px;
+  text-align: left;
+  padding: 4rem 3rem;
+}
+
+.title_home {
+  font-size: 4rem;
+}
+
+.desc_home {
+  font-size: 1.2rem;
+}
+
+.btn_common {
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  border-radius: 0.2rem;
+  border: 1px solid;
+  background-color: transparent;
+  transition: 100ms linear all;
+  font-size: 1.3rem;
+}
+
+.btn_common:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+
+.btn_common:active {
+  background-color: #eee;
+  color: #222;
 }

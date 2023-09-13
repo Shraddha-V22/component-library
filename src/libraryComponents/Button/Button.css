@@ -14,8 +14,8 @@ button:hover {
 }
 
 .button:hover {
-  border-color: #eee;
-  background-color: #eee;
+  border-color: #222;
+  background-color: #222;
 }
 
 .primary {
@@ -42,10 +42,9 @@ button:hover {
   border-radius: 50%;
   border: 1px solid;
   background-color: transparent;
-  position: fixed;
 }
 
 .floating_action_btn:hover {
-  background-color: #eee;
-  border-color: #eee;
+  background-color: #222;
+  border-color: #222;
 }

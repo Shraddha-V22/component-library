@@ -19,24 +19,29 @@ export default function Button({
 }
 
 type FloatingActionBtnType = {
+  onClick: () => any;
   icon: JSX.Element | string;
   top?: string | number;
   bottom?: string | number;
   left?: string | number;
   right?: string | number;
+  className?: string;
 };
 
 export function FloatingActionButton({
+  onClick,
   icon,
   top,
   bottom,
   left,
   right,
+  className,
 }: FloatingActionBtnType) {
   return (
     <button
       style={{ top, right, left, bottom }}
-      className={`floating_action_btn`}
+      className={`floating_action_btn ${className}`}
+      onClick={onClick}
     >
       {icon}
     </button>

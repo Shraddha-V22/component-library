@@ -1,15 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Header.css";
+import { Searchbar } from "..";
 
 export function Header() {
+  const navigate = useNavigate();
   return (
     <header className="header">
-      <h1>My component library</h1>
-      <div>search bar</div>
-      <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/components/all">Components</NavLink>
-      </nav>
+      <h1 onClick={() => navigate("/")}>Bloom UI</h1>
+      <div>
+        <Searchbar />
+        <nav>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/components/all">Components</NavLink>
+        </nav>
+      </div>
     </header>
   );
 }

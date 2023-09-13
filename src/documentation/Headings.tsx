@@ -5,10 +5,16 @@ import DocSection from "./DocSection";
 export default function HeadingsDocs() {
   return (
     <div className="flex_col">
-      <div>
+      <div className="container">
         <h1>Heading</h1>
         <p>Styles for Heading component.</p>
       </div>
+
+      <div className="container">
+        <h2>Component</h2>
+        <IFrame codeId="DAvk77HiSZF4eThywfD1" />
+      </div>
+
       <DocSection
         heading="Headings of different variants"
         componentEx={
@@ -29,7 +35,7 @@ export default function HeadingsDocs() {
             <code>h6</code>.
           </p>
         }
-        iframe={<IFrame codeId="pkKWxPRhEhPWbnWDsUQ3" />}
+        iframe={<IFrame codeId="QuxbpHKMU1v6kJkfbjyb" />}
       />
 
       <DocSection
@@ -47,7 +53,7 @@ export default function HeadingsDocs() {
             above.
           </p>
         }
-        iframe={<IFrame codeId="HLRR6tv4sGe8vVZN0a1G" />}
+        iframe={<IFrame codeId="KzRUdmoiuJ5RHon5drpW" />}
       />
     </div>
   );

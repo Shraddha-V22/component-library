@@ -6,9 +6,19 @@ import DocSection from "./DocSection";
 export default function CardDocs() {
   return (
     <div className="flex_col">
-      <div>
+      <div className="container">
         <h1>Card</h1>
         <p>Card with header, image and text.</p>
+      </div>
+
+      <div className="container">
+        <h2>Component</h2>
+        <IFrame codeId="Mo54OL0AeCtHutIR5eoG" />
+      </div>
+
+      <div className="container">
+        <h2>CSS</h2>
+        <IFrame codeId="LbsUrAq9h3QvohJiVEko" />
       </div>
 
       <DocSection
@@ -29,7 +39,7 @@ export default function CardDocs() {
             Card component takes Badge component as children.
           </p>
         }
-        iframe={<IFrame codeId="piR7HYD0agdzTpYwWsBk" />}
+        iframe={<IFrame codeId="UDumhwGIJtXLzQ3ZAEgt" />}
       />
 
       <DocSection
@@ -51,7 +61,7 @@ export default function CardDocs() {
             overlay property as true, which gives the card overlay text style.
           </p>
         }
-        iframe={<IFrame codeId="tmNTLZotMSLzupGbN9XK" />}
+        iframe={<IFrame codeId="33yybH3xrWKJUL66tEvR" />}
       />
 
       <DocSection
@@ -72,7 +82,7 @@ export default function CardDocs() {
             <code>subHeading</code> and <code>Text</code> properties.
           </p>
         }
-        iframe={<IFrame codeId="4VEwlPilnWgHouuvlcaY" />}
+        iframe={<IFrame codeId="YPgTkG0hppplmQi824Nv" />}
       />
 
       <DocSection
@@ -94,7 +104,7 @@ export default function CardDocs() {
             property that the CardText component takes.
           </p>
         }
-        iframe={<IFrame codeId="dJnizXT54U9RKihE1Kkk" />}
+        iframe={<IFrame codeId="NkiNnGpo8y8RZcVo4DtF" />}
       />
 
       <DocSection
@@ -117,7 +127,7 @@ export default function CardDocs() {
             to the card as shown above.
           </p>
         }
-        iframe={<IFrame codeId="ZK7r2veL1jBJfV7xDCu5" />}
+        iframe={<IFrame codeId="ms8P7Uyu9RMncwIeTCFE" />}
       />
 
       <DocSection
@@ -139,7 +149,7 @@ export default function CardDocs() {
             will unmount the card.
           </p>
         }
-        iframe={<IFrame codeId="ZK7r2veL1jBJfV7xDCu5" />}
+        iframe={<IFrame codeId="4sr0AsglN5VhH4E5M1MZ" />}
       />
     </div>
   );

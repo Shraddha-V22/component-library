@@ -5,16 +5,25 @@ import DocSection from "./DocSection";
 export default function AlertDocs() {
   return (
     <div className="flex_col">
-      <div>
+      <div className="container">
         <h1>Alert</h1>
         <p>
           Alert presents a notification or alert to capture the user's
           attention.
         </p>
       </div>
+
+      <div className="container">
+        <h2>Component</h2>
+        <IFrame codeId="VKnVtZ6o4NNFtPW4fuT7" />
+      </div>
+      <div className="container">
+        <h2>CSS</h2>
+        <IFrame codeId="uxZnBoQu3xdpPnN0Xxsg" />
+      </div>
       <DocSection
         heading="Normal Alert component"
-        componentEx={<Alert text="I am alerting you!" />}
+        componentEx={<Alert text="I am a simple alert component!" />}
         description={
           <p>
             This is a normal alert component with simple style and which does
@@ -24,7 +33,7 @@ export default function AlertDocs() {
             classes.
           </p>
         }
-        iframe={<IFrame codeId="p3eyiaZ2fElw2wHF9waF" />}
+        iframe={<IFrame codeId="IBf89VttafHmOcnPBHUx" />}
       />
       <DocSection
         heading="Alert components with different types"
@@ -46,7 +55,7 @@ export default function AlertDocs() {
             <code>warning</code>, <code>info</code>, and <code>error</code>.
           </p>
         }
-        iframe={<IFrame codeId="8dnJnP1P971VokLkIhAN" />}
+        iframe={<IFrame codeId="ng1JI8d2SYnEvGJK1asZ" />}
       />
     </div>
   );

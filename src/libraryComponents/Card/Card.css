@@ -4,6 +4,7 @@
   border-radius: 0.2rem;
   position: relative;
   padding: 1.5rem;
+  background-color: #eee;
 }
 
 .dismiss_btn {
@@ -37,6 +38,7 @@
   top: 1.7rem;
   right: 1.7rem;
   background-color: white;
+  color: #222;
 }
 
 .card_img {
@@ -53,6 +55,7 @@
   background-color: hsla(0, 0%, 100%);
   padding: 1rem;
   border-radius: 0.2rem;
+  color: #222;
 }
 
 .overlay {
